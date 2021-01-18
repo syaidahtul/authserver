@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Templates -->
+	<definition name="publictemplate" template="/WEB-INF/jsp/layouts/publictemplate.jsp">
+		<put-attribute name="title" value="S3P:ID" />
+		<put-attribute name="header" value="/WEB-INF/jsp/views/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/views/footer.jsp" />
+	</definition>
+	
+	<definition name="securedtemplate" template="/WEB-INF/jsp/layouts/securedtemplate.jsp">
+		<put-attribute name="body" value="" />
+	</definition>
+
+	<!-- LOGIN PAGE -->
+	<definition name="login" extends="publictemplate">
+		<put-attribute name="title" value="S3P:ID | Login" />
+		<put-attribute name="body" value="/WEB-INF/jsp/views/login.jsp" />
+	</definition>
+	
+	<!-- Dashboard Start -->
+	<definition name="secured.dashboard.admin" extends="securedtemplate">
+		<put-attribute name="title" value="S3P:ID | TERMINATOR" />
+		<put-attribute name="body" value="/WEB-INF/jsp/views/secured/dashboards/adminLandingPage.jsp" />
+	</definition>
+	
+	<definition name="secured.dashboard.user" extends="securedtemplate">
+		<put-attribute name="title" value="S3P:ID | Dashboard" />
+		<put-attribute name="body" value="/WEB-INF/jsp/views/secured/dashboards/userLandingPage.jsp" />
+	</definition> 
+	<!-- Dashboard End -->
+	
+	<definition name="secured.registration.user" extends="securedtemplate">
+		<put-attribute name="title" value="S3P:ID | USERS" />
+		<put-attribute name="body" value="/WEB-INF/jsp/views/secured/admin/users.jsp" />
+	</definition>
+
+	<definition name="secured.registration.user.new" extends="securedtemplate">
+		<put-attribute name="title" value="S3P:ID | USER REGISTRATION" />
+		<put-attribute name="body" value="/WEB-INF/jsp/views/secured/admin/userregistration.jsp" />
+	</definition>
+	
+	<definition name="secured.registration.system" extends="securedtemplate">
+		<put-attribute name="title" value="S3P:ID | SYSTEM REGISTRATION" />
+		<put-attribute name="body" value="/WEB-INF/jsp/views/secured/admin/registerSystem.jsp" />
+	</definition>
+
+	<definition name="secured.bill.new" extends="securedtemplate">
+		<put-attribute name="title" value="S3P:ID | Bill" />
+		<put-attribute name="body" value="/WEB-INF/jsp/views/secured/bills/billnew.jsp" />
+	</definition>
+	
+</tiles-definitions>

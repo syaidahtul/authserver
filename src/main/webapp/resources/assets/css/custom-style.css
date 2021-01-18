@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.mandatory::after {
+	content: "\2A";
+	font-weight: bold;
+	color: #dc3545;
+}
+
+.row .btn {
+	float: right;
+	margin-left: 0.5rem;
+}
