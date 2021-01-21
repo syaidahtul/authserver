@@ -44,7 +44,7 @@
 	      						<form:options items="${billForm.billStatus}" itemValue="code" itemLabel="name"/>
 							</form:select>
 						</div>
-					</div>				
+					</div>
 					
 					<div class="form-group row">
 						<label class="col-md-2 col-form-label" for="receiver"> 

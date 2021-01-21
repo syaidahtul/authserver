@@ -18,22 +18,31 @@ public class DashboardControllers {
 	
 	@RequestMapping("/admin")
 	public ModelAndView getAdminPage() {
-		LOGGER.info("!! Admin is here !!");
 		ModelAndView dashboardView = new ModelAndView("secured.dashboard.admin", HttpStatus.OK);
 		return dashboardView;
 	}
-	
-	@RequestMapping("/dashboard")
-	public ModelAndView getDashboardPage() {
-		LOGGER.info("!! Admin is here !!");
-		ModelAndView dashboardView = new ModelAndView("secured.dashboard.user", HttpStatus.OK);
+
+	@RequestMapping("/government")
+	public ModelAndView getGovernmentPage() {
+		// TODO: Government landing page
+		LOGGER.info("!! Government staff successfully authenticated !!");
+		ModelAndView dashboardView = new ModelAndView("secured.dashboard.government", HttpStatus.OK);
+		return dashboardView;
+	}
+
+	@RequestMapping("/institute")
+	public ModelAndView getInstitutePage() {
+		// TODO: Institute landing page
+		LOGGER.info("!! Institue member successfully authenticated !!");
+		ModelAndView dashboardView = new ModelAndView("secured.dashboard.institute", HttpStatus.OK);
 		return dashboardView;
 	}
 	
-	@RequestMapping()
-	public ModelAndView getUserPage() {
-		LOGGER.info("!! User successfully authenticated !!");
-		ModelAndView dashboardView = new ModelAndView("secured.dashboard.user", HttpStatus.OK);
+	@RequestMapping("/public")
+	public ModelAndView getPublicPage() {
+		// TODO: Public landing page
+		LOGGER.info("!! Public user successfully authenticated  !!");
+		ModelAndView dashboardView = new ModelAndView("secured.dashboard.public", HttpStatus.OK);
 		return dashboardView;
 	}
 }

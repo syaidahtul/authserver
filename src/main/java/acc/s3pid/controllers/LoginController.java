@@ -11,11 +11,9 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
 import acc.s3pid.forms.LoginForm;
-import acc.s3pid.forms.UserRegistrationForm;
 
 @Controller
-@RequestMapping("/auth")
-@SessionAttributes({ "loginForm", "registrationForm" })
+@SessionAttributes({ "loginForm" })
 public class LoginController {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(LoginController.class);
@@ -25,13 +23,16 @@ public class LoginController {
 		
 	}
 	
-	@RequestMapping()
+	@RequestMapping("/")
+	public String getLogin() {
+		return "redirect:/auth";
+	}
+	
+	@RequestMapping("/auth")
 	public ModelAndView getLoginForm() {
-		// check if user already logged in
 		ModelAndView loginView = new ModelAndView("login");
 		loginView.setStatus(HttpStatus.OK);
 		loginView.addObject("loginForm", new LoginForm());
-		loginView.addObject("registrationForm", new UserRegistrationForm());
 		return loginView;
 	}
 	

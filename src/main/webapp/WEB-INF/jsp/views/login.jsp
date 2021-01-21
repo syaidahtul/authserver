@@ -36,14 +36,16 @@
 					</div>
 					<form:button id="kt_login_signin_submit" name="action" value="signin" class="btn btn-primary font-weight-bold px-9 py-4 my-3 mx-4"><spring:message code="button.signin" /></form:button>
 				</form:form>
+				<!--   
 				<div class="mt-10">
 					<span class="opacity-70 mr-4">Don't have an account yet?</span>
 					<a href="javascript:;" id="kt_login_signup" class="text-muted text-hover-primary font-weight-bold">Sign Up!</a>
 				</div>
+				 -->
 			</div>
 			<!--end::Login Sign in form-->
-			
-			<!--begin::Login Sign up form-->
+			<!--
+			<!--begin::Login Sign up form
 			<div class="login-signup">
 				<div class="mb-20">
 					<h3>Sign Up</h3>
@@ -75,9 +77,9 @@
 					</div>
 				</form:form>
 			</div>
-			<!--end::Login Sign up form-->
+			<!--end::Login Sign up form
 			
-			<!--begin::Login forgot password form-->
+			<!--begin::Login forgot password form
 			<div class="login-forgot">
 				<div class="mb-20">
 					<h3>Forgotten Password ?</h3>

@@ -10,3 +10,7 @@
 	float: right;
 	margin-left: 0.5rem;
 }
+
+.card-footer .flex-left {
+	justify-content: flex-end;
+}

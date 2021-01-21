@@ -34,22 +34,27 @@
 	</definition> 
 	<!-- Dashboard End -->
 	
-	<definition name="secured.registration.user" extends="securedtemplate">
+	<definition name="secured.admin.usermanagement" extends="securedtemplate">
 		<put-attribute name="title" value="S3P:ID | USERS" />
 		<put-attribute name="body" value="/WEB-INF/jsp/views/secured/admin/users.jsp" />
 	</definition>
+	
+	<definition name="secured.admin.usermanagement.create" extends="securedtemplate">
+		<put-attribute name="title" value="S3P:ID | USERS" />
+		<put-attribute name="body" value="/WEB-INF/jsp/views/secured/admin/usernew.jsp" />
+	</definition>
 
-	<definition name="secured.registration.user.new" extends="securedtemplate">
+	<definition name="secured.admin.usermanagement.update" extends="securedtemplate">
 		<put-attribute name="title" value="S3P:ID | USER REGISTRATION" />
 		<put-attribute name="body" value="/WEB-INF/jsp/views/secured/admin/userregistration.jsp" />
 	</definition>
 	
-	<definition name="secured.registration.system" extends="securedtemplate">
+	<definition name="secured.admin.usermanagement.delete" extends="securedtemplate">
 		<put-attribute name="title" value="S3P:ID | SYSTEM REGISTRATION" />
 		<put-attribute name="body" value="/WEB-INF/jsp/views/secured/admin/registerSystem.jsp" />
 	</definition>
 
-	<definition name="secured.bill.new" extends="securedtemplate">
+	<definition name="secured.admin.usermanagement.create" extends="securedtemplate">
 		<put-attribute name="title" value="S3P:ID | Bill" />
 		<put-attribute name="body" value="/WEB-INF/jsp/views/secured/bills/billnew.jsp" />
 	</definition>

@@ -12,24 +12,24 @@
 
 
 		<!--begin::Page Custom Styles(used by this page)-->
-		<link rel="stylesheet" type="text/css" href="<spring:url value="/resources/assets/css/pages/users/login-3.css"/>" />
+		<link rel="stylesheet" type="text/css" href="<spring:url value="resources/assets/css/pages/users/login-3.css"/>" />
 		
 		<!--end::Page Custom Styles-->
 		
 		<!--begin::Global Theme Styles(used by all pages)-->
-		<link rel="stylesheet" type="text/css" href="<spring:url value="/resources/assets/plugins/global/plugins.bundle.css"/>" />
-		<link rel="stylesheet" type="text/css" href="<spring:url value="/resources/assets/plugins/custom/prismjs/prismjs.bundle.css"/>" />
-		<link rel="stylesheet" type="text/css" href="<spring:url value="/resources/assets/css/style.bundle.css"/>" />
+		<link rel="stylesheet" type="text/css" href="<spring:url value="resources/assets/plugins/global/plugins.bundle.css"/>" />
+		<link rel="stylesheet" type="text/css" href="<spring:url value="resources/assets/plugins/custom/prismjs/prismjs.bundle.css"/>" />
+		<link rel="stylesheet" type="text/css" href="<spring:url value="resources/assets/css/style.bundle.css"/>" />
 		<!--end::Global Theme Styles-->
 		
 		<!--begin::Layout Themes(used by all pages)-->
-		<link rel="stylesheet" type="text/css" href="<spring:url value="/resources/assets/css/themes/layout/header/base/light.css"/>" />
-		<link rel="stylesheet" type="text/css" href="<spring:url value="/resources/assets/css/themes/layout/header/menu/light.css"/>" />
-		<link rel="stylesheet" type="text/css" href="<spring:url value="/resources/assets/css/themes/layout/brand/dark.css"/>" />
-		<link rel="stylesheet" type="text/css" href="<spring:url value="/resources/assets/css/themes/layout/aside/dark.css"/>" />
+		<link rel="stylesheet" type="text/css" href="<spring:url value="resources/assets/css/themes/layout/header/base/light.css"/>" />
+		<link rel="stylesheet" type="text/css" href="<spring:url value="resources/assets/css/themes/layout/header/menu/light.css"/>" />
+		<link rel="stylesheet" type="text/css" href="<spring:url value="resources/assets/css/themes/layout/brand/dark.css"/>" />
+		<link rel="stylesheet" type="text/css" href="<spring:url value="resources/assets/css/themes/layout/aside/dark.css"/>" />
 		<!--end::Layout Themes-->
 		
-		<link rel="icon" type="image/x-icon" href="<spring:url value="/resources/assets/images/favicon.png"/>" />
+		<link rel="icon" type="image/x-icon" href="<spring:url value="resources/assets/images/favicon.png"/>" />
 	</head>
 	<!--end::Head-->
 	
