@@ -31,7 +31,7 @@ import acc.s3pid.services.UserService;
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	
 	@Bean
-	public AuthTokenFilter authenticationJwtTokenFilter() {
+	public AuthTokenFilter authTokenFilter() {
 		return new AuthTokenFilter();
 	}
 	
@@ -92,11 +92,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 				.formLogin()
 				.loginPage("/auth")
 				.loginProcessingUrl("/auth/signin")
-				.permitAll()
-			.successHandler(successHandler);
+				.failureUrl("/auth?error=true")
+				.successHandler(successHandler)
+			.and()
+				.logout()
+				.invalidateHttpSession(true);
 
-		http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
-		
+		http.addFilterBefore(authTokenFilter(), UsernamePasswordAuthenticationFilter.class);
+	    http.sessionManagement().maximumSessions(1).expiredUrl("/login?expired=true");
 		http.httpBasic();
 	}
 }
